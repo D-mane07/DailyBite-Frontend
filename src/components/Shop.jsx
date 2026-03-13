@@ -46,7 +46,7 @@ export default function Shop() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-3 bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 text-transparent bg-clip-text animate-gradient-x">
           {shop?.name || "Loading..."}
         </h1>
-        <p className="text-gray-900 font-bold text-lg sm:text-xl">Vingo Shop Profile</p>
+        <p className="text-gray-900 font-bold text-lg sm:text-xl">DailyBite Shop Profile</p>
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

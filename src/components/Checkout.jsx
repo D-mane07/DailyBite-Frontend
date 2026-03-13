@@ -11,7 +11,7 @@ import { setAddress, setLocation } from "../pages/redux/MapSlice";
 import { MdDeliveryDining } from "react-icons/md";
  import {serverurl} from "../App.jsx"
 import { useNavigate } from "react-router-dom";
-import vingologo from "../../public/Vingo.png"
+import dailybitelogo from "../../public/DailyBite.png"
 const EXTERNAL_REQUEST_CONFIG = {
   withCredentials: false,
   timeout: 12000,
@@ -241,8 +241,8 @@ const Checkout = () => {
 
   {/* Floating Logo */}
   <motion.img
-    src={vingologo}
-    alt="vingologo"
+    src={dailybitelogo}
+    alt="dailybitelogo"
     animate={{ y: [0, -8, 0] }}
     transition={{
       duration: 3,
@@ -254,7 +254,7 @@ const Checkout = () => {
 
   {/* Main Heading */}
   <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d2d] via-[#ff6a3d] to-[#ff7f50] text-center drop-shadow-2xl mt-4 tracking-wide">
-    Vingo Checkout
+    DailyBite Checkout
   </h1>
 
   {/* Glow Line */}

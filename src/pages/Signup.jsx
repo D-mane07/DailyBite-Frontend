@@ -112,7 +112,7 @@ const googlesignup = async () => {
           className="text-5xl font-extrabold text-center mb-2 text-[#ff4d2d]"
           whileHover={{ scale: 1.05 }}
         >
-          Vingo
+          DailyBite
         </motion.h1>
         <p className="text-base sm:text-lg text-gray-700 font-semibold text-center mt-2">
           Signup to get the best food deliveries

@@ -27,7 +27,7 @@ const navigate=useNavigate()
   const handlesignout = async () => {
     try {
       await axios.get(`${serverurl}/user/logout`, { withCredentials: true });
-      localStorage.removeItem("vingo_auth_token");
+      localStorage.removeItem("dailybite_auth_token");
       dispatch(setUserData(null));
     } catch (error) {
       console.log(error.response?.data || error.message);
@@ -51,7 +51,7 @@ const navigate=useNavigate()
         className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#ff4d2d] cursor-pointer select-none"
         whileHover={{ scale: 1.05 }}
       >
-        Vingo <span className="text-gray-700 text-lg">Owner</span>
+        DailyBite <span className="text-gray-700 text-lg">Owner</span>
       </motion.h1>
 
       {/* Nav Buttons */}

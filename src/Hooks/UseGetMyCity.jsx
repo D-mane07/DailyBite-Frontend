@@ -8,10 +8,10 @@ import {
 } from "../pages/redux/UserSlice";
 import { setLocation } from "../pages/redux/MapSlice";
 
-const CITY_STORAGE_KEY = "vingo_current_city";
-const STATE_STORAGE_KEY = "vingo_current_state";
-const ADDRESS_STORAGE_KEY = "vingo_current_address";
-const LOCATION_STORAGE_KEY = "vingo_current_location";
+const CITY_STORAGE_KEY = "dailybite_current_city";
+const STATE_STORAGE_KEY = "dailybite_current_state";
+const ADDRESS_STORAGE_KEY = "dailybite_current_address";
+const LOCATION_STORAGE_KEY = "dailybite_current_location";
 
 const EXTERNAL_REQUEST_CONFIG = {
   withCredentials: false,

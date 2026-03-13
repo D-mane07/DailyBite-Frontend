@@ -161,7 +161,7 @@ const handlecreateditshop = async (e) => {
 
       {/* footer text */}
       <p className="mt-5 text-gray-400 text-sm text-center">
-        powered by <span className="text-[#ff4d2d] font-semibold">vingo</span>
+        powered by <span className="text-[#ff4d2d] font-semibold">dailybite</span>
       </p>
     </div>
   );

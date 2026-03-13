@@ -28,7 +28,7 @@ const Delnav = () => {
  const handlesignout = async () => {
     try {
       await axios.get(`${serverurl}/user/logout`, { withCredentials: true });
-      localStorage.removeItem("vingo_auth_token");
+      localStorage.removeItem("dailybite_auth_token");
       dispatch(setUserData(null));
     } catch (error) {
       console.log(error.response?.data || error.message);
@@ -55,7 +55,7 @@ const Delnav = () => {
         whileHover={{ scale: 1.08 }}
         onClick={() => navigate("/")}
       >
-        Vingo<span className="text-white">Rider</span>
+        DailyBite<span className="text-white">Rider</span>
       </motion.h1>
 
       {/* Search (Desktop) */}

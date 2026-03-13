@@ -59,7 +59,7 @@ const DeliveryTracking = ({ data, data2, data3 }) => {
         transition={{ duration: 1 }}
         className="text-center text-3xl font-extrabold text-orange-400 tracking-wider"
       >
-        Vingo Delivery Tracking
+        DailyBite Delivery Tracking
       </motion.h1>
       <motion.h1
         initial={{ y: -40, opacity: 0 }}

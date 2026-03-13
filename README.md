@@ -1,6 +1,6 @@
-﻿# Vingo Frontend
+﻿# DailyBite Frontend
 
-React + Vite client for the Vingo food ordering platform.
+React + Vite client for the DailyBite food ordering platform.
 
 ## What This App Includes
 
@@ -27,7 +27,7 @@ React + Vite client for the Vingo food ordering platform.
 ## Prerequisites
 
 - Node.js 18+
-- Running Vingo backend API
+- Running DailyBite backend API
 - Firebase project credentials
 - Geo API key (for geolocation/address lookup)
 

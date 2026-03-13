@@ -13,9 +13,9 @@ const Footer = () => {
         
         {/* About */}
         <div>
-          <h3 className="text-white font-bold text-xl mb-4">About Vingo</h3>
+          <h3 className="text-white font-bold text-xl mb-4">About DailyBite</h3>
           <ul className="space-y-2">
-            {["Company Info", "Careers", "Press Releases", "Vingo Services"].map((item, idx) => (
+            {["Company Info", "Careers", "Press Releases", "DailyBite Services"].map((item, idx) => (
               <li
                 key={idx}
                 className="hover:text-[#ff4d2d] transition-colors duration-300 cursor-pointer"
@@ -118,7 +118,7 @@ const Footer = () => {
       {/* CREDIT SECTION */}
       <div className="text-center text-gray-400 text-sm border-t border-gray-800 pt-6">
         <p className="mb-1">
-          © {new Date().getFullYear()} <span className="text-white font-semibold">Vingo</span>. All Rights Reserved.
+          © {new Date().getFullYear()} <span className="text-white font-semibold">DailyBite</span>. All Rights Reserved.
         </p>
         <p className="tracking-wide">
          
@@ -128,7 +128,7 @@ const Footer = () => {
     whileHover={{ scale: 1.2 }}
     className="text-[#ff4d2d] font-bold hover:text-[#ff4d2d] transition-colors cursor-pointer"
   >
-    Developer By Md Rafi Khan
+    Developer By DDMANE
     
   </motion.a>
         </p>

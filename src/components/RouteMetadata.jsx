@@ -55,7 +55,7 @@ const RouteMetadata = () => {
     upsertMetaTag("name", "twitter:image", image);
 
     upsertMetaTag("property", "og:type", "website");
-    upsertMetaTag("property", "og:site_name", "Vingo");
+    upsertMetaTag("property", "og:site_name", "DailyBite");
     upsertMetaTag("property", "og:title", title);
     upsertMetaTag("property", "og:description", description);
     upsertMetaTag("property", "og:url", canonical);

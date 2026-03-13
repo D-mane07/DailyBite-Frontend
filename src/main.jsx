@@ -7,9 +7,9 @@ import APP from "./App";
 import { store } from "./pages/redux/Store";
 import "./index.css";
 
-const AUTH_TOKEN_KEY = "vingo_auth_token";
+const AUTH_TOKEN_KEY = "dailybite_auth_token";
 
-if (!globalThis.__VINGO_AXIOS_READY__) {
+if (!globalThis.__DAILYBITE_AXIOS_READY__) {
   axios.defaults.withCredentials = true;
 
   axios.interceptors.request.use(
@@ -35,10 +35,10 @@ if (!globalThis.__VINGO_AXIOS_READY__) {
     (error) => Promise.reject(error)
   );
 
-  globalThis.__VINGO_AXIOS_READY__ = true;
+  globalThis.__DAILYBITE_AXIOS_READY__ = true;
 }
 
-if (!globalThis.__VINGO_ALERT_TOAST_READY__) {
+if (!globalThis.__DAILYBITE_ALERT_TOAST_READY__) {
   window.alert = (message) => {
     const text = String(message || "Notification");
     const lower = text.toLowerCase();
@@ -64,7 +64,7 @@ if (!globalThis.__VINGO_ALERT_TOAST_READY__) {
 
     toast(text);
   };
-  globalThis.__VINGO_ALERT_TOAST_READY__ = true;
+  globalThis.__DAILYBITE_ALERT_TOAST_READY__ = true;
 }
 
 createRoot(document.getElementById("root")).render(

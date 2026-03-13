@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { serverurl } from "../App";
 import { setUserData } from "../pages/redux/UserSlice";
 
-const AUTH_TOKEN_KEY = "vingo_auth_token";
+const AUTH_TOKEN_KEY = "dailybite_auth_token";
 
 const normalizeCurrentUserPayload = (payload) => {
   const rawUser = payload?.User || payload?.user;
