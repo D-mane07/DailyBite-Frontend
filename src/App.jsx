@@ -25,7 +25,7 @@ import TrackorderPage from './components/TrackorderPage.jsx'
 import Shop from './components/Shop.jsx'
 import RouteMetadata from './components/RouteMetadata.jsx'
 
-export const serverurl="https://20.193.151.157:8000"
+export const serverurl="http://20.193.151.157:8000"
 const APP = () => {
    const{userData}=useSelector(state=>state.user)
   const authChecked = UseGetCurrentUser();
