@@ -51,7 +51,7 @@ Notes:
 The API base URL is currently hardcoded in `src/App.jsx`:
 
 ```js
-export const serverurl = "https://vingobackend-production.up.railway.app";
+export const serverurl = "https://20.193.151.157:8000";
 ```
 
 For local development, change it to your local backend URL, for example:
