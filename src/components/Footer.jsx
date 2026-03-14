@@ -78,7 +78,7 @@ const Footer = () => {
 
   {/* Facebook */}
   <motion.a
-    href="https://www.facebook.com/rafi.hossian.71"
+    href="https://www.facebook.com"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.2 }}
@@ -89,7 +89,7 @@ const Footer = () => {
 
   {/* Instagram */}
   <motion.a
-    href="https://www.instagram.com/rafihushen01/"
+    href="https://www.instagram.com/"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.2 }}
@@ -103,7 +103,7 @@ const Footer = () => {
 
   {/* LinkedIn */}
   <motion.a
-    href="https://www.linkedin.com/in/rafi-khan-749b95385/"
+    href="https://www.linkedin.com/"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.2 }}
