@@ -5,7 +5,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
 const statusSteps = ["pending", "confirmed", "preparing", "out_for_delivery", "delivered"];
-
 const statusLabel = {
   pending: "Order Placed",
   confirmed: "Confirmed",
@@ -34,8 +33,17 @@ const TrackorderPage = () => {
 
   useEffect(() => { fetchOrder(); }, [fetchOrder]);
 
-  if (loading) return <div className="flex items-center justify-center min-h-screen"><p className="text-gray-500 text-lg">Loading order tracking...</p></div>;
-  if (!order) return <div className="flex items-center justify-center min-h-screen"><p className="text-gray-500">No order found.</p></div>;
+  if (loading) return (
+    <div className="flex items-center justify-center min-h-screen">
+      <p className="text-gray-500 text-lg">Loading order tracking...</p>
+    </div>
+  );
+
+  if (!order) return (
+    <div className="flex items-center justify-center min-h-screen">
+      <p className="text-gray-500">No order found.</p>
+    </div>
+  );
 
   const shopOrder = order.shopOrder?.[0];
   const status = shopOrder?.status || "pending";
@@ -44,24 +52,30 @@ const TrackorderPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 p-4">
       <div className="max-w-2xl mx-auto">
+
         <div className="flex items-center gap-3 mb-6">
           <IoMdArrowRoundBack size={28} className="text-[#ff4d2d] cursor-pointer" onClick={() => navigate("/")} />
           <h1 className="text-2xl font-bold text-[#ff4d2d]">Track Order</h1>
         </div>
 
-        {/* Order Status */}
+        {/* Order Status Timeline */}
         <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
-          <h2 className="text-lg font-bold text-gray-700 mb-4">Order Status</h2>
-          <div className="flex items-center justify-between relative">
+          <h2 className="text-lg font-bold text-gray-700 mb-6">Order Status</h2>
+          <div className="flex items-start justify-between relative">
             <div className="absolute top-4 left-0 right-0 h-1 bg-gray-200 z-0">
-              <div className="h-1 bg-[#ff4d2d] transition-all duration-500" style={{width: `${(currentStep / (statusSteps.length - 1)) * 100}%`}}></div>
+              <div
+                className="h-1 bg-[#ff4d2d] transition-all duration-500"
+                style={{ width: `${(currentStep / (statusSteps.length - 1)) * 100}%` }}
+              ></div>
             </div>
             {statusSteps.map((step, i) => (
               <div key={step} className="flex flex-col items-center z-10">
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${i <= currentStep ? 'bg-[#ff4d2d] text-white' : 'bg-gray-200 text-gray-400'}`}>
                   {i < currentStep ? '✓' : i + 1}
                 </div>
-                <span className={`text-xs mt-1 text-center ${i <= currentStep ? 'text-[#ff4d2d] font-semibold' : 'text-gray-400'}`}>{statusLabel[step]}</span>
+                <span className={`text-xs mt-2 text-center max-w-[60px] ${i <= currentStep ? 'text-[#ff4d2d] font-semibold' : 'text-gray-400'}`}>
+                  {statusLabel[step]}
+                </span>
               </div>
             ))}
           </div>
@@ -72,7 +86,9 @@ const TrackorderPage = () => {
           <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
             <h2 className="text-lg font-bold text-gray-700 mb-3">Shop</h2>
             <div className="flex items-center gap-4">
-              {shopOrder.shop.image && <img src={shopOrder.shop.image} alt="shop" className="w-16 h-16 rounded-xl object-cover" />}
+              {shopOrder.shop.image && (
+                <img src={shopOrder.shop.image} alt="shop" className="w-16 h-16 rounded-xl object-cover" />
+              )}
               <div>
                 <p className="font-bold text-gray-800">{shopOrder.shop.name}</p>
                 <p className="text-gray-500 text-sm">{shopOrder.shop.address}</p>
@@ -87,7 +103,9 @@ const TrackorderPage = () => {
           <h2 className="text-lg font-bold text-gray-700 mb-3">Items</h2>
           {shopOrder?.shopOrderItems?.map((item, i) => (
             <div key={i} className="flex items-center gap-4 py-3 border-b last:border-0">
-              {item.item?.image && <img src={item.item.image} alt={item.name} className="w-14 h-14 rounded-xl object-cover" />}
+              {item.item?.image && (
+                <img src={item.item.image} alt={item.name} className="w-14 h-14 rounded-xl object-cover" />
+              )}
               <div className="flex-1">
                 <p className="font-semibold text-gray-800">{item.name}</p>
                 <p className="text-gray-500 text-sm">Qty: {item.quantity} × ₹{item.price}</p>
@@ -113,6 +131,7 @@ const TrackorderPage = () => {
             <span className="font-bold text-[#ff4d2d] text-lg">₹{order.totalamount}</span>
           </div>
         </div>
+
       </div>
     </div>
   );
