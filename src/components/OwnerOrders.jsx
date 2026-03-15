@@ -204,7 +204,7 @@ const OwnerOrders = () => {
               <div className="flex items-center gap-2 text-gray-700 text-sm md:text-base">
                 <Clock className="w-5 h-5 text-gray-600" />
                 <span>
-                  total amount: <b>৳{order.totalamount}</b>
+                  total amount: <b>₹{order.totalamount}</b>
                 </span>
               </div>
 
