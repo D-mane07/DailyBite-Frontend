@@ -245,7 +245,7 @@ const acceptorder = async (assigmentId) => {
                       <span className="font-medium">{it?.name} × {it?.quantity}</span>
                     </div>
                     <span className="font-bold text-[#ff4d2d]">
-                      ${it?.price * it?.quantity}
+                      ₹{it?.price * it?.quantity}
                     </span>
                   </motion.li>
                 ))}
@@ -520,7 +520,7 @@ const acceptorder = async (assigmentId) => {
                     <div className="flex justify-between">
                       <img src={item?.item?.image}alt="" className='h-40 w-40 rounded-lg object-cover' />
                       <p className='text-xl font-bold'>{item?.name} × {item?.quantity}</p>
-                      <p className="text-orange-400 font-semibold">${item?.price * item?.quantity}</p>
+                      <p className="text-orange-400 font-semibold">₹{item?.price * item?.quantity}</p>
                     </div>
                   </motion.div>
                 ))}

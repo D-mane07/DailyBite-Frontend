@@ -122,10 +122,10 @@ const OwnerOrders = () => {
                           <span className="font-medium">{item.quantity}</span>
                         </p>
                         <p className="text-sm text-gray-600">
-                          price: ${item.item.price}
+                          price: ₹{item.item.price}
                         </p>
                         <p className="text-sm font-semibold text-gray-800 mt-1">
-                          subtotal: ${item.item.price * item.quantity}
+                          subtotal: ₹{item.item.price * item.quantity}
                         </p>
                         <select
                           onChange={(e) =>

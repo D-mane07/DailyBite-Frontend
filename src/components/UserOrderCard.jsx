@@ -104,14 +104,14 @@ const UserOrderCard = ({ data }) => {
                   {item.item?.name}
                 </p>
                 <p className='text-xs text-gray-500'>
-                  Qty: {item.quantity} × ${item.item?.price}
+                  Qty: {item.quantity} × ₹{item.item?.price}
                 </p>
               </div>
 
 
               {/* Total for this item */}
               <p className='font-semibold text-gray-700'>
-                ${item.quantity * item.item?.price}
+                ₹{item.quantity * item.item?.price}
               </p>
             </div>
           ))}

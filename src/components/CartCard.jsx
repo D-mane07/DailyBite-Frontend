@@ -30,10 +30,10 @@ const CartCard = ({ data }) => {
         <div>
           <h1 className="font-semibold text-gray-800 text-lg">{data.name}</h1>
           <p className="text-gray-500 text-sm">
-            ${data.price} × {data.quantity}
+            ₹{data.price} × {data.quantity}
           </p>
           <p className="font-bold text-gray-700 mt-1">
-            Total: ${data.price * data.quantity}
+            Total: ₹{data.price * data.quantity}
           </p>
         </div>
       </div>

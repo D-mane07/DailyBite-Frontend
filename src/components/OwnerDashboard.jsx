@@ -152,7 +152,7 @@ const handledelete = async (itemId, setItems) => {
                 {item.category} • {item.foodtype}
               </p>
               <p className="text-black font-semibold mt-2 text-lg">
-                $ {item.price}
+                ₹ {item.price}
               </p>
 
               {/* Edit button */}
