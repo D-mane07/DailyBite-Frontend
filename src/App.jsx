@@ -25,7 +25,7 @@ import TrackorderPage from './components/TrackorderPage.jsx'
 import Shop from './components/Shop.jsx'
 import RouteMetadata from './components/RouteMetadata.jsx'
 
-export const serverurl="https://dailybite.ddns.net"
+export const serverurl=import.meta.env.VITE_API_URL || "https://dailybite.ddns.net"
 const APP = () => {
    const{userData}=useSelector(state=>state.user)
   const authChecked = UseGetCurrentUser();
