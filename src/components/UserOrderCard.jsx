@@ -123,7 +123,7 @@ const UserOrderCard = ({ data }) => {
         <p className='font-medium flex items-center gap-2'>
           <FaBoxOpen className='text-indigo-500' /> Total Amount
         </p>
-        <p className='text-xl font-bold text-indigo-600'>${data.totalamount}</p>
+        <p className='text-xl font-bold text-indigo-600'>₹{data.totalamount}</p>
       </div>
     </motion.div>
   )
