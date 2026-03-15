@@ -138,7 +138,7 @@ const EditItems = () => {
 
           {/* price */}
           <div>
-            <label className="text-gray-700 font-semibold">Price ($)</label>
+            <label className="text-gray-700 font-semibold">Price (₹)</label>
             <input
               type="number"
               name="price"

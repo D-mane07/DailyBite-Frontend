@@ -151,7 +151,7 @@ const AddItems = () => {
 
           {/* price */}
           <motion.div whileFocus={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
-            <label className="text-gray-700 font-semibold">Price (৳)</label>
+            <label className="text-gray-700 font-semibold">Price (₹)</label>
             <input
               type="number"
               name="price"
